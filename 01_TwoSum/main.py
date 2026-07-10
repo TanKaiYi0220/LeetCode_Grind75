@@ -1,10 +1,12 @@
-PROBLEM_TITLE = "Two Sum"
-LEETCODE_URL = "https://leetcode.com/problems/two-sum"
-DIFFICULTY = "Easy"
-
-def main() -> None:
-    raise NotImplementedError("TODO: solve Two Sum")
+from typing import List
 
 
-if __name__ == "__main__":
-    main()
+class Solution:
+    def twoSum(self, nums: List[int], target: int) -> List[int]:
+        num_map = {}
+
+        for idx, n in enumerate(nums):
+            dn = target - n
+            if dn in num_map:
+                return [num_map[dn], idx]
+            num_map[n] = idx

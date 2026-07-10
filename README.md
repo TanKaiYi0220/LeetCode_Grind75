@@ -6,7 +6,7 @@ This checklist contains exactly 75 questions, grouped by topic.
 
 ## Array
 
-- [ ] [Two Sum](https://leetcode.com/problems/two-sum) - Easy - [TODO](01_TwoSum/main.py)
+- [ ] [Two Sum](https://leetcode.com/problems/two-sum) - Easy - [SOLVED](01_TwoSum/main.py)
 - [ ] [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock) - Easy - [TODO](02_BestTimeToBuyAndSellStock/main.py)
 - [ ] [Insert Interval](https://leetcode.com/problems/insert-interval) - Medium - [TODO](03_InsertInterval/main.py)
 - [ ] [3Sum](https://leetcode.com/problems/3sum) - Medium - [TODO](04_3Sum/main.py)
