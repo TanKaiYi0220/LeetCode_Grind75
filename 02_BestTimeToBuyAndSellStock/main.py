@@ -1,10 +1,12 @@
-PROBLEM_TITLE = "Best Time to Buy and Sell Stock"
-LEETCODE_URL = "https://leetcode.com/problems/best-time-to-buy-and-sell-stock"
-DIFFICULTY = "Easy"
+class Solution:
+    def maxProfit(self, prices: List[int]) -> int:
+        cost = prices[0]
+        max_profit = 0
 
-def main() -> None:
-    raise NotImplementedError("TODO: solve Best Time to Buy and Sell Stock")
-
-
-if __name__ == "__main__":
-    main()
+        for i in range(1, len(prices)):
+            if prices[i] < cost:
+                cost = prices[i]
+            elif prices[i] - cost > max_profit:
+                max_profit = prices[i] - cost
+            
+        return max_profit

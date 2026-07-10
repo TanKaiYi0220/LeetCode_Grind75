@@ -11,7 +11,9 @@
 
 - We need to find two values whose sum equals the target.
 - A brute-force nested loop works, but it checks too many pairs.
-- A hash map lets us remember numbers we have already seen and check the needed complement quickly.
+- We need a data structure that remember numbers we have already seen and check the needed complement quickly.
+
+### Answer: Hash Map
 
 ## Approach: One-Pass Hash Map
 
