@@ -5,29 +5,29 @@
 - LeetCode: [Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self)
 - Difficulty: `Medium`
 - Solution File: [main.py](./main.py)
-- Status: `Template`
+- Status: `Implemented`
 
 ## Intuition
 
-- Describe the key observation that makes this problem easier than brute force.
-- Note the data structure, pattern, or invariant that guides the solution.
+- Product of array except self without using division operation.
+- By observation, we can found that answer for any `nums[i]` is product of `nums[0], ..., nums[i - 1]` and `nums[i + 1], ..., nums[length]`, which is product of prefix array and suffix array.
+
+### Answer: Product of Prefix Array and Suffix Array
 
 ## Approach
 
-1. Summarize the algorithm in a few short steps.
-2. Call out the main loop, recursion, or state transition.
-3. Mention any edge cases worth checking.
+1. A loop to calculate the product of prefix array
+    - Create variable `prefix`
+    - Store `prefix` into `out[i]` before multiply itself `prefix *= nums[i]`
+2. A loop to calculate the product of suffix array
+    - Create variable `suffix`
+    - Multiply `suffix` into `out[i]` before multiply itself `suffix *= nums[i]`
 
 ## Complexity
 
-- Time Complexity: `TODO`
-- Space Complexity: `TODO`
-
-## Notes
-
-- Add pitfalls, alternative approaches, or follow-up ideas here.
+- Time Complexity: `O(n)`
+    - Two simple loops
+- Space Complexity: `O(1)`
+    - Only using output array and two variable (can be used as one)
 
 ## Other Resources
-
-- [Problem Statement](https://leetcode.com/problems/product-of-array-except-self)
-- Add one trusted explanation or reference after you solve it.
